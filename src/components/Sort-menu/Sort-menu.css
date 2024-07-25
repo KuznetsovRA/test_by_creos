@@ -1,0 +1,44 @@
+.sort-menu {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.sortType-wrapper {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.sort-menu label {
+    font-size: 14px;
+
+}
+
+.sort-menu select {
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    transition: border-color 0.3s ease;
+}
+
+.sort-menu select:hover {
+    border-color: #e7cb0a;
+}
+
+select {
+    background-color: rgba(170, 170, 203, 0.7);
+    color: inherit;
+}
+
+option {
+    color: rgb(0, 0, 0);
+    background-color: inherit;
+}
+
+option:hover{
+    background-color: rgb(8, 12, 227);
+}

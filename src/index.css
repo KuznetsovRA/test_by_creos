@@ -1,0 +1,21 @@
+@import "normalize.css";
+
+:root {
+    --darkbg:#251D29;
+    --darkt: #FFD1F7;
+    --darkHighleted: #e7cb0a;
+    --lightbg: #fff;
+    --lightt: #D43370;
+
+    --toggleHeight: 16em;
+    --toggleWidth: 30em;
+    --toggleBtnRadius: 10em;
+
+    --bgColor--night: #423966;
+    --toggleBtn-bgColor--night: var(--bgColor--night);
+    --bgColor--highleted: #330072;
+    --mooncolor: #D9FBFF;
+    --bgColor--day: #9ee3fb;
+    --toggleBtn-bgColor--day: var(--bgColor--day);
+}
+

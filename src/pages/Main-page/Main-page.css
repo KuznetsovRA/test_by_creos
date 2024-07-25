@@ -1,0 +1,26 @@
+.main-page {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    color: #e7cb0a;
+}
+
+.top-designers {
+    background-color: var(--bgColor--highleted);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.comments {
+    background-color: var(--bgColor--highleted);;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+

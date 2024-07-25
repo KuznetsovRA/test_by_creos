@@ -1,0 +1,46 @@
+.task-chart{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.task-status-chart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.chart-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+
+    max-width: 1200px; /* Ширина графика */
+    max-height: 600px; /* Высота графика */
+    width: 100%;
+    margin: 0 auto;
+
+    background-color:  var(--darkbg);
+    color: #e7cb0a;
+
+}
+.chart-wrapper canvas {
+    width: 100%;
+    max-width: 600px;
+    max-height: 500px;
+    height: 1vh;
+    margin: 10px 50px;
+}
+
+.weeks-selector {
+    background-color:  var(--darkbg);
+    color: #e7cb0a;
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
