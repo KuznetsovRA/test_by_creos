@@ -1,30 +1,43 @@
-# React + TypeScript + Vite
+   
+1)Исходный код проекта выложен на github. - выполнено
+2)Описание проекта:
+а)что удалось выполнить(чекбоксы):
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+        Шапка
+        Переключение локалей(RU, EN) для интерфейса. - выполнено
+        Переключение тем(светлая. темная). - выполнено частично, показал суть, не стал сильно подбирать стилевые решения
+        Вывести текущий номер рабочей недели. - выполнено
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+        Главная страница
+            - отобразить последние 10 комментариев. 
+              Вывести: аватар дизайнера, имя пользователя, относительное время(минут, часов, дней назад), задача, сообщение. - выполнено
+            - отобразить топ 10 дизайнеров. Рассчитать: медиана затраченного времени на выполнение задачи, количество выполненных задач.  - выполнено
+              Отсортировать по меньшему времени, максимальное количество закрытых задач.  - выполнено, с учетом, что сортировка идёт только для этих 10 дизайнеров, новые данные с сервера не подтягиваются
+              Вывести: аватар дизайнера, имя пользователя, время, количество выполненных задач. - выполнено
+    
+        Страница задач
+            - построить график закрытых за месяц задач с распределением по **номерам рабочей недели. - выполнено
+                График состоит из 3 частей: ***прибыль, ****расходы и разница между прибылью и расходом. - выполнено
+                По умолчанию выводить 8 последних рабочих недель(предусмотреть выбор количества отображаемых недель). - выполнено
+            - круговая диаграмма с процентным соотношением статусов всех задач - выполнено
+            
+        Страница дизайнера
+            - отобразить таблицу дизайнеров. - выполнено
+            Вывести: аватар дизайнера, имя дизайнера, почта, количество задач закрытых и в процессе. - выполнено
+            Сортировка по имени дизайнера, почте. - выполнено
+            !!Фильтр по статусам, проектам. - не выполнено, по документации /designer - query params: status, не происходит фильтрация, можно было реализовать через /issue?status=Done и уже тут обработаь полученные данные, но я пропустил
+            Пагинация - выполнено
 
-## Expanding the ESLint configuration
+б)какие библиотеки использовали(ui, визуализация), другие особенности.
+"axios": для подключения к серверу
+"react-chartjs-2", "chart.js": для построения графиков
+"react-i18next": для переключения языка
+"normalize.css": для номрализации стилей
+"react", "react-dom": для создания SPA
+"react-redux": для хранилища
+"react-router-dom": для маршрутизации
+vite для сборки
+eslint для проверки кода
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.App.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+3)Build проекта - должен собираться без ошибок  - выполнено
